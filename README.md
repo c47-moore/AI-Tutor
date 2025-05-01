@@ -20,3 +20,8 @@ marked as 'mastered'.
 
 ### Online prototype
 You can try out the prototype at [chubster.duckdns.org](http://chubster.duckdns.org/index.php)
+
+## Repo folder structure
+Within this repository are a number of folders, which are as follows:
+
+[/php](php/)
