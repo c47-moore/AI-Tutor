@@ -4,6 +4,7 @@ This project implements a prototype of an AI-powered schoolteacher for the lower
 syllabus in the UK.
 
 The high-level architecture is shown in the figure below:
+
 ![Capture](https://github.com/user-attachments/assets/f4241fd0-8fba-498c-ae32-8417fc77be00)
 
 The AI Tutor is implemented as a web app. The student user points their web browser at the AI Tutor URL
