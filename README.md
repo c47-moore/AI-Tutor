@@ -19,7 +19,7 @@ option, so that they can take the qualifying test and, if they pass the test, th
 marked as 'mastered'.
 
 ### Online prototype
-You can try out the prototype at [chubster.duckdns.org](http://chubster.duckdns.org/index.php)
+You can try out the prototype at [chubster.duckdns.org](http://chubster.duckdns.org/index.php) (If Google doesn't work, try other browsers to see if it helps).
 
 ## Repo folder structure
 Within this repository are a number of folders, which are as follows:
