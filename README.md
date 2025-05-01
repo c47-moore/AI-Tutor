@@ -24,4 +24,31 @@ You can try out the prototype at [chubster.duckdns.org](http://chubster.duckdns.
 ## Repo folder structure
 Within this repository are a number of folders, which are as follows:
 
-[/php](php/)
+[/php](php/)\
+Contains PHP code that is used by the AI Tutor web app but lives *outside* the http-accessible
+area under [/www](www/). This prevents a malicious user being able to wget the PHP implementation and gain
+access to database credentials or examine the implementation.
+
+[/python](python/)\
+Contains the python code for interacting with the LLM, as well as some utility code used mainly
+for testing during prototype development.
+
+[/www](www/)\
+Contains the web app, this would be where the HTTP server would be configured to serve
+the web app. This folder contains the following:
+
+<dl>
+  <dt>index.php</dt>
+  <dd>The main page with the learning dashboard.</dd>
+  <dt>login.php</dt>
+  <dd>Called to handle user login/registration actions.</dd>
+  <dt>logout.php</dt>
+  <dd>Logs out the currently logged in user.</dd>
+  <dt>topic-test.php</dt>
+  <dd>Enables users to take a test to pass a given topic.</dd>
+  <dt>tutor.php</dt>
+  <dd>A chat-like interface to the AI tutor, powered by the backend LLM.</dd>
+</dl>
+
+[/www/cgi-bin](www/cgi-bin/)\
+Contains the python CGI handlers for communicating with the LLM.
