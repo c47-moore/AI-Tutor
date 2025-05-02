@@ -10,7 +10,7 @@ from dbase import connect_database
 system_role = "You are a friendly and patient teacher explaining things "\
     "to a young child in a simple and engaging way."
 
-GEMINI_API_KEY = "AIzaSyBXkHJj-9jJjz_PpjK9lZ2rB1S-R0PrQrM"
+GEMINI_API_KEY = "<INSERT API KEY HERE>"
 ANSWER_ROLE = "You are an AI evaluating a response to a predefined question."
 
 def gemini_check_answer(message):
