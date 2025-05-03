@@ -109,6 +109,10 @@ This endpoint is called when a user answers a test question, and is used to pass
 the test question, the expected response, and the user's response to the AI Tutor LLM
 so that it can verify the user's answer.
 
+[process.py](www/cgi-bin/process.py)\
+This is the legacy endpoint, superseded by aitutor.py above. This endpoint handles
+messages and responses to an Ollama-hosted LLM.
+
 ## Database schema
 The SQL for recreating the database schema can be found in [/sql](sql/) and it consists
 of the following tables:
