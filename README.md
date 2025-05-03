@@ -96,7 +96,18 @@ Hidden prompts are sent to the LLM to direct it as to whether the session is for
 a new topic, or whether the LLM should summarise the lesson so far and resume the topic.
 
 ### [/www/cgi-bin](www/cgi-bin/)
-Contains the python CGI handlers for communicating with the LLM.
+Contains the python CGI handlers for communicating with the LLM. Note: for production use, this
+code needs updating to prevent [cross-site request forgeries](https://en.wikipedia.org/wiki/Cross-site_request_forgery).
+
+[aitutor.py](www/cgi-bin/aitutor.py)\
+This is the endpoint called by [/www/js/script.js](www/js/script.js) when a message is
+sent to the AI Tutor LLM. This file simply retrieves the message text and userid from
+the submitted form data and passes it to Gemini via [/python/gemini.py](python/gemini.py).
+
+[check-answer.py](www/cgi-bin/check-answer.py)\
+This endpoint is called when a user answers a test question, and is used to pass
+the test question, the expected response, and the user's response to the AI Tutor LLM
+so that it can verify the user's answer.
 
 ## Database schema
 The SQL for recreating the database schema can be found in [/sql](sql/) and it consists
